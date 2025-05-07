@@ -1,11 +1,11 @@
 import {Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild} from '@angular/core';
-import {Router, RouterOutlet} from "@angular/router";
+import {Router, RouterModule, RouterOutlet} from "@angular/router";
 import $ from 'jquery';
 
 
 @Component({
   selector: 'app-side-nav',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RouterModule],
   templateUrl: './side-nav.component.html',
   styleUrls: ['./side-nav.component.css']
 })
